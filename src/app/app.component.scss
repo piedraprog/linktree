@@ -1,0 +1,25 @@
+$xs: 360px; // Extra small devices | Portrait phones (<34em : 22.5em)
+$sm: 544px; // Small devices | Landscape phones (≥34em)
+$md: 768px; // Medium devices | Tablets (≥48em)
+$lg: 992px; // Large devices | Desktops (≥62em)
+$xl: 1200px; // Extra large devices | Desktops (≥75em)
+$xxl: 1920px; // Mega large Desktops | Desktops (≥120em)
+
+
+
+.card_container {
+    margin-top: 5rem;
+    background-color: red;
+    width: 100vh;
+    height: 100vh;
+}
+
+
+@media (max-width: $md) {
+    .card_container {
+        margin-top: 5rem;
+        background-color: blue;
+        width: 100%;
+        height: auto;
+    }  
+}
