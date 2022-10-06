@@ -9,17 +9,23 @@ $xxl: 1920px; // Mega large Desktops | Desktops (≥120em)
 
 .card_container {
     margin-top: 5rem;
-    background-color: red;
+    margin-bottom: 5rem;
     width: 100vh;
-    height: 100vh;
+    // height: 100vh;
+    border-radius: 59px;
+    background: linear-gradient(225deg, #7b767c3d, #ece8e834);
+    box-shadow:  -21px 21px 60px #2f2f3193,
+                21px -21px 60px #02002483;
 }
 
 
 @media (max-width: $md) {
     .card_container {
         margin-top: 5rem;
-        background-color: blue;
-        width: 100%;
+        background: linear-gradient(225deg, #7b767c3d, #ece8e834);
+        box-shadow:  -21px 21px 60px #2f2f3193,
+                21px -21px 60px #02002483;
+        width: 95%;
         height: auto;
     }  
 }

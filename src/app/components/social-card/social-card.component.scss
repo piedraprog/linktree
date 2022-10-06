@@ -1,0 +1,92 @@
+$xs: 360px; // Extra small devices | Portrait phones (<34em : 22.5em)
+$sm: 544px; // Small devices | Landscape phones (≥34em)
+$md: 768px; // Medium devices | Tablets (≥48em)
+$lg: 992px; // Large devices | Desktops (≥62em)
+$xl: 1200px; // Extra large devices | Desktops (≥75em)
+$xxl: 1920px; // Mega large Desktops | Desktops (≥120em)
+
+.button_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+
+    .button {
+        background-color: #92969780;
+        border-radius: 6px;
+        border: 3px solid rgba(0, 0, 0, 0.774);
+        color: #fff;
+        font-size: 16px;
+        padding: 16px 24px;
+        text-align: center;
+        text-transform: capitalize;
+        text-decoration: none;
+        cursor: pointer;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .button:hover {
+        background-color: #ffffff;
+        
+        label {
+            color: rgb(0, 0, 0);
+        }
+    }
+
+    .icon {
+        height: 2.5em;
+        color: white;
+        width: 10%;
+    }
+
+    .social_text {
+        width: 90%;
+        text-align: center;
+        padding-top: 0.12em;
+        font-weight: normal;
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: $md) {
+
+    .button_container {
+        
+        .button {
+            width: 70%;
+        }
+
+    }
+}
+
+// to fix in the future
+.twitter {
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 5%, rgba(0,153,255,1) 73%);
+}
+
+.facebook {
+    background: rgb(46,85,204);
+    background: linear-gradient(90deg, rgba(46,85,204,1) 10%, rgba(65,167,236,1) 73%);
+}
+
+.instagram {
+    background: rgb(121,40,9);
+    background: linear-gradient(90deg, rgba(121,40,9,1) 10%, rgba(246,0,255,1) 73%);
+}
+
+.github {
+    background: rgb(104,24,213);
+    background: linear-gradient(90deg, rgba(104,24,213,1) 10%, rgba(9,44,143,1) 42%, rgba(16,8,97,1) 73%);
+}
+
+.youtube {
+    background: rgb(117,16,16);
+    background: linear-gradient(90deg, rgba(117,16,16,1) 10%, rgba(252,43,43,1) 73%);
+}
+
+.tiktok {
+    background: rgb(217,21,21);
+    background: linear-gradient(90deg, rgba(217,21,21,1) 25%, rgba(0,166,255,1) 100%);
+}

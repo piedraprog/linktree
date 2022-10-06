@@ -12,4 +12,38 @@ export class SocialCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  socialInfo : any[] = [
+    {
+      "name": "github",
+      "link": "https://github.com/piedraprog",
+      "socialCode":"github"
+    },
+    {
+      "name": "linkdn",
+      "link": "",
+      "socialCode":"linkedin"
+    },
+    {
+      "name": "instagram",
+      "link": "",
+      "socialCode":"instagram"
+    },
+    {
+      "name": "facebook",
+      "link": "",
+      "socialCode":"facebook"
+    },
+    {
+      "name": "twitter",
+      "link": "",
+      "socialCode":"twitter"
+    },
+    {
+      "name": "youtube",
+      "link": "",
+      "socialCode":"youtube"
+    },
+  ];
+  
 }

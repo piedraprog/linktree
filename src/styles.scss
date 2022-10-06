@@ -1,11 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+$xs: 360px; // Extra small devices | Portrait phones (<34em : 22.5em)
+$sm: 544px; // Small devices | Landscape phones (≥34em)
+$md: 768px; // Medium devices | Tablets (≥48em)
+$lg: 992px; // Large devices | Desktops (≥62em)
+$xl: 1200px; // Extra large devices | Desktops (≥75em)
+$xxl: 1920px; // Mega large Desktops | Desktops (≥120em)
+
 * {
     font-family: 'Roboto', sans-serif;
+    margin: 0%;
 }
 
 app-root {
-    
+    background: rgb(131,25,164);
+    background: linear-gradient(90deg, rgba(131,25,164,1) 0%, rgba(9,9,121,1) 35%, rgba(179,5,103,1) 63%, rgba(0,153,255,1) 100%);
     display: grid;
     justify-content: center;
     align-items: center;
+    z-index: 0;
+}
+
+
+@media (max-width: $md) {
+    app-root {
+        background: rgb(131,25,164);
+        background: linear-gradient(0deg, rgba(131,25,164,1) 0%, rgba(9,9,121,1) 35%, rgba(179,5,103,1) 63%, rgba(0,153,255,1) 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 0;
+    }
 }

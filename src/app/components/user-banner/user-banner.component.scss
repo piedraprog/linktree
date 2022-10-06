@@ -1,12 +1,16 @@
-.banner_container {
+$xs: 360px; // Extra small devices | Portrait phones (<34em : 22.5em)
+$sm: 544px; // Small devices | Landscape phones (≥34em)
+$md: 768px; // Medium devices | Tablets (≥48em)
+$lg: 992px; // Large devices | Desktops (≥62em)
+$xl: 1200px; // Extra large devices | Desktops (≥75em)
+$xxl: 1920px; // Mega large Desktops | Desktops (≥120em)
 
-    
+
+.banner_container {
     .card_header {
-        
         display: flex;
         flex-direction: column;
         justify-content: center;
-
 
         .banner_img {
             border-radius: 50px 50px 0px 0px;
@@ -22,16 +26,63 @@
             border-radius: 100vh;
             z-index: 1;
         }  
+
+        .social_links {
+            // align-self: center;
+            display: flex;
+        }
       
     }
 
-    // .card_information {
-    //     position: relative;
-    //     display: flex;
-    //     justify-content: center;
-    //     font-size: large;
-    // }
+    .card_information {
+        display: flex;
+        flex-direction: column;
+        // margin: 10px;
+        color: aliceblue;
+
+        h1 {
+            margin: 0;
+            font-size: 5em;
+            font-weight: bolder;
+            align-self: center;
+        }
+
+        h2 {
+            align-self: center;
+            margin-top: -10px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        p {
+            align-self: center;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+    }
 }
 
+@media (max-width: $md) {
+    .banner_container {
+        .card_information {
+            h1 {
+                font-size: 3em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+
+            p {
+                font-weight: lighter;
+                font-size: small;
+                margin-bottom: 1rem;
+                width: 80%;
+            }
+        }
+    }
+}
 
     

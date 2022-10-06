@@ -1,0 +1,7 @@
+<div *ngFor="let social of socialInfo" class="button_container">
+    <a class="button" href="{{social.link}}">
+        <img src="../../../assets/icons/{{social.socialCode}}.svg" class="icon">
+        <label class="social_text">{{social.name}}</label>
+    </a>
+</div>
+
